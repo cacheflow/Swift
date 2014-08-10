@@ -9,33 +9,36 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    
+    var mario = SKSpriteNode()
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         
-        self.addChild(myLabel)
+        //Physics for environment
+        self.physicsWorld.gravity = CGVectorMake(0.0, -5.0);
+        
+        
+        //Mario
+        var MarioTexture = SKTexture(imageNamed: "mario")
+        MarioTexture.filteringMode = SKTextureFilteringMode.Nearest
+        
+        mario = SKSpriteNode(texture: MarioTexture)
+        mario.setScale(0.5)
+        mario.position = CGPoint(x: self.frame.size.width * 0.35, y: self.frame.size.height * 0.6)
+        
+        mario.physicsBody = SKPhysicsBody(circleOfRadius:mario.size.height/2.0)
+        mario.physicsBody.dynamic = true
+        mario.physicsBody.allowsRotation = false
+        
+        self.addChild(mario)
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         /* Called when a touch begins */
         
         for touch: AnyObject in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+           
         }
     }
    
