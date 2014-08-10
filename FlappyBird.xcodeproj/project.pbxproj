@@ -14,7 +14,7 @@
 		D09DFF681998106D005BF686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09DFF661998106D005BF686 /* Main.storyboard */; };
 		D09DFF6A1998106D005BF686 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09DFF691998106D005BF686 /* Images.xcassets */; };
 		D09DFF761998106E005BF686 /* FlappyBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09DFF751998106E005BF686 /* FlappyBirdTests.swift */; };
-		D09DFF821998200C005BF686 /* flappybirdground.png in Resources */ = {isa = PBXBuildFile; fileRef = D09DFF801998200C005BF686 /* flappybirdground.png */; };
+		D09DFF821998200C005BF686 /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = D09DFF801998200C005BF686 /* ground.png */; };
 		D09DFF831998200C005BF686 /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = D09DFF811998200C005BF686 /* mario.png */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		D09DFF6F1998106E005BF686 /* FlappyBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappyBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09DFF741998106E005BF686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09DFF751998106E005BF686 /* FlappyBirdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappyBirdTests.swift; sourceTree = "<group>"; };
-		D09DFF801998200C005BF686 /* flappybirdground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappybirdground.png; sourceTree = "<group>"; };
+		D09DFF801998200C005BF686 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
 		D09DFF811998200C005BF686 /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +123,7 @@
 		D09DFF7F1998200C005BF686 /* imageFlappy */ = {
 			isa = PBXGroup;
 			children = (
-				D09DFF801998200C005BF686 /* flappybirdground.png */,
+				D09DFF801998200C005BF686 /* ground.png */,
 				D09DFF811998200C005BF686 /* mario.png */,
 			);
 			name = imageFlappy;
@@ -214,7 +214,7 @@
 				D09DFF831998200C005BF686 /* mario.png in Resources */,
 				D09DFF611998106D005BF686 /* GameScene.sks in Resources */,
 				D09DFF681998106D005BF686 /* Main.storyboard in Resources */,
-				D09DFF821998200C005BF686 /* flappybirdground.png in Resources */,
+				D09DFF821998200C005BF686 /* ground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
